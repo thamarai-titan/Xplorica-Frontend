@@ -18,7 +18,7 @@ export const Title = () => {
                     </div>
             </div>
             <div className="m-6 px-10 py-5">
-                <button className="bg-green-500 p-2 px-4 rounded border-1">Scroll Down To See More</button>
+                <button className="bg-green-500 p-2 px-4 rounded border-1 hover:bg-green-600 hover:translate-y-1 traslate duration-400 cursor-pointer">Scroll Down To See More</button>
             </div>
         </div>
     </>
