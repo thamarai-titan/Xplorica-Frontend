@@ -1,25 +1,15 @@
+import t1 from "../img/t1.jpg"
 export const Title = () => {
+
+    const ia = [
+        "https://cdn.pixabay.com/photo/2016/04/05/11/04/nepal-1309205_1280.jpg",
+        "https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/05/31/14/16/sea-7233667_1280.jpg"
+
+    ]
     return <>
-
-        <div>
-            <div className="m-6 flex justify-items-center pt-10 ">
-
-                <div className="text-6xl font-mono p-10 font-bold">
-                    Life is either a daring adventure or nothing at all.
-                </div>
-
+            <div className="flex justify-center items-center bg-cover h-96 w-96" style={{backgroundImage:`url(${t1})`}}>
+             
             </div>
-            <div className="m-6">
-                <div className="w-[700px] px-10 font-mono">"Welcome to Xplorica – where every journey is an adventure waiting to unfold.
-                    Discover breathtaking destinations, hidden gems, and unforgettable experiences.
-                    Whether you're a traveler, an explorer, or a dreamer, we bring the world closer to you.
-                    Join us as we navigate through cultures, landscapes, and stories that inspire.
-                    Xplorica is more than just a name – it's your passport to exploration!"
-                    </div>
-            </div>
-            <div className="m-6 px-10 py-5">
-                <button className="bg-green-500 p-2 px-4 rounded border-1 hover:bg-green-600 hover:translate-y-1 traslate duration-400 cursor-pointer">Scroll Down To See More</button>
-            </div>
-        </div>
     </>
-}
+}       

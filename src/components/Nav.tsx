@@ -1,7 +1,7 @@
 export const Nav = () => {
     return <>
         <nav>
-            <div className="flex justify-between items-center p-5 border-1 2xl:w-7xl mx-auto">
+            <div className="flex justify-between items-center p-5 shadow-2xs 2xl:w-7xl mx-auto">
                 <div className="font-lato sm:text-2xl">
                     Xplorica
                 </div>
@@ -11,6 +11,6 @@ export const Nav = () => {
                 </div>
             </div>
         </nav>
-    </>
+    </>     
         
 }
