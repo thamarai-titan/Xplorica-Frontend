@@ -1,11 +1,13 @@
+import { Header } from "./components/Header";
 import { Nav } from "./components/Nav";
 import { Title } from "./components/Title";
 const App = ()=>{
 
   return (
-    <div>
+    <div className="dark:bg-[#161616]">
       <Nav/>
-      <Title/>
+      <Header/>
+      
     </div>
   );
 }
