@@ -1,25 +1,26 @@
-import t1 from "../img/t1.jpg";
 import { useEffect, useState } from "react";
 export const Title = () => {
     const images: string[] = [
         "https://cdn.pixabay.com/photo/2016/04/05/11/04/nepal-1309205_1280.jpg",
-        "https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg",
+        "https://cdn.pixabay.com/photo/2024/06/05/19/45/mountains-8811206_1280.jpg",
         "https://cdn.pixabay.com/photo/2022/05/31/14/16/sea-7233667_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/09/21/16/49/arch-7470764_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/10/07/08/59/sky-7504583_1280.jpg",
+        "https://cdn.pixabay.com/photo/2022/01/08/14/09/mont-saint-michel-6924072_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/02/18/20/02/nature-1207955_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/05/16/13/14/scenery-5177531_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/05/24/13/29/dubrovnik-5214286_1280.jpg"
     ];
-    const text: string[] = [
-        "Hello",
-        "EveryOne",
-        "All of YOU",
-    ]
+   
 
     const [currentIndex, setCurrentIndex] = useState<number>(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 5000); // Change every 3 seconds
+        }, 3000); // Change every 3 seconds
 
-        return () => clearInterval(interval); // Cleanup on unmount
+        return () => clearInterval(interval); 
     }, []);
 
     return (
