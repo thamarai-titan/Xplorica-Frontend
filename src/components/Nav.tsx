@@ -1,4 +1,4 @@
-import React from "react"
+
 import { Moon } from "../icons/Moon"
 import {Sun } from "../icons/Sun"
 import { useState,useEffect } from "react"
