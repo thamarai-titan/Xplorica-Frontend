@@ -19,7 +19,7 @@ export const MainContent = () => {
     useEffect(() => {
         const FetchData = async () => {
             try {
-                const response = await fetch('http://localhost:3000/');
+                const response = await fetch('https://xplorica-backend.onrender.com');
                 const result: DataType[] = await response.json();
                 SetData(result);
             } catch {
